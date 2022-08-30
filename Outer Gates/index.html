@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+    <title>Outer Gates</title>
+</head>
+<body>
+
+
+<section class="intro">
+    <div class="ruler">
+        <ul>
+            <li><a href="#Objective">Objective</li>
+            <li><a href="#warriors">Warriors</a></li>
+            <li><a href="#spells">Spells</a></li>
+            <li><a href="#phases">Phases</a></li>            
+        </ul>
+</div>
+<div class="hero">
+    <h1>Outer Gates</h1>
+    <div class="button"><a href="#Objective"> <h2>Objective</a></h2></div>
+</div>
+</section>
+<hr>
+
+<section class="Objective" id="Objective">
+    <h1>Objective</h1>
+
+    <h3>In order to earn a victory point, player 1 must place 3 warriors in a vertical row</h3>
+   <br>
+    <section class="Objective1" id="horizCards">
+        
+        <div class="card gold"><p>5</p>
+            <img src="src/images/spartan.png" alt="spartan">
+            </div>
+
+            <div class="card gold"><p>9</p>
+                <img src="src/images/spartan.png" alt="spartan">
+                </div>
+
+                <div class="card gold"><p>3</p>
+                    <img src="src/images/spartan.png" alt="spartan">
+                    </div>
+                </section>
+            </div>
+
+                    <h3>player 2 must place 3 warriors in a horizontal row</h3>
+                    
+     <section class="Objective2" id="vertCards">
+        
+        <div class="card blue"><p>5</p>
+            <img src="src/images/spartan.png" alt="spartan">
+            </div>
+
+            <div class="card blue"><p>9</p>
+                <img src="src/images/spartan.png" alt="spartan">
+                </div>
+
+                <div class="card blue"><p>3</p>
+                    <img src="src/images/spartan.png" alt="spartan">
+                    </div>
+               
+    </section>
+
+
+    <h3>First player to reach 2 victory points win the game.</h3>
+    
+</section>
+<hr>
+<section class="warriors" id="warriors">
+<h1>Warriors</h1>
+<h3>Warriors differentiate from each other by their power level.
+2 warriors that occupy the same tile will engage in combat. The warrior with the higher power will automatically win and will remain in play.
+     The losing warrior is sent to the "graveyard".</h3>
+     <div class="power-demo">
+        <div class="card blue"><p>10</p>
+            <img src="src/images/spartan.png" alt="spartan">
+            </div>
+            <img class="greater" src="src/images/greater.png" alt="greater">
+
+            <div class="card gold"><p>5</p>
+                <img src="src/images/spartan.png" alt="spartan">
+                </div>
+     </div>
+</section>
+
+<hr>
+
+<section class="spells" id="spells">
+    <h1><u>Spells</u></h1>
+    <h3>With spells the players can effect the board. Spells have a different mana cost.</h3>
+    </h3>
+    <div class="cards-container">
+        <a href="#mana" class="spell"><p>0</p>
+            <br>
+            <h1>Generate Mana</h1>
+            <br>
+            <h7>Generated 1 mana</h7>
+        </a>
+
+        <a href="#push" class="spell"><p>1</p>
+            <br>
+            <h1>Push</h1>
+            <br>
+            <h7>Push warrior/s</h7>
+        </a>
+
+        <a href="#calm" class="spell"><p>2</p>
+            <br>
+            <h1>Calm</h1>
+            <br>
+            <h7>Warriors co-exist on calm tile</h7>
+        </a>
+
+        <a href="#plague" class="spell"><p>3</p>
+            <br>
+            <h1>Plague</h1>display: flex;
+            flex-direction: column;
+            <br>
+            <h7>Send all warriors to the graveyard</h7>
+        </a>
+
+        <a href="#resurrection" class="spell long"><p>2</p>
+            <br>
+            <h1>Resurrection</h1>
+            <br>
+            <h7>Return all warriors from graveyard to players hand</h7>
+        </a>
+    </div>
+
+    <div class="spell-discription-container">
+        <div class="spell-discription" id="mana"><h3><u>Generate Mana-</u> Use the Generate Mana spell to get mana points. 
+        You can have up to 6 Mana points</h3></div>
+        <br>
+
+        <div class="spell-discription" id="calm"><h3><u>Calm-</u>this spell effects a chosen tile and turns it "calm"
+            Multiple warriors can stay in a calm tile and battle can not take place in a clam tile. This spell enables both 
+        players to earn a victory point simultaneously</h3></div>
+        <br>
+        
+        <div class="spell-discription" id="push"><h3><u>Push-</u> with this spell you can push all the warriors in a tile 1 tile in each of the 4 cardinal directions.
+        push can be used on your warriors as well as the enemy warriors. Push can not be used on a "calm tile".</h3></div>
+        <br>
+        <div class="spell-discription" id="plague"><h3><u>Plague-</u>sends all warriors on board to the graveyard.</h3></div>
+        <br>
+        <div class="spell-discription" id="resurrection"><h3><u>Resurrection-</u>
+            Returns all warriors in graveyard to their player's hand</h3></div>
+        
+
+    </div>
+</section>
+<hr>
+
+<section class="phases" id="phases">
+<h1><u>Phases</u></h1>
+
+<div class="phase-description"><h3>Each match consists on 2-3 rounds (until a player achieves 2 victory point).
+    Each turn consists of 4 phases:
+</h3> </div>
+<h3><u>1) Commit-</u>As opposed to the classical "I go you go" turn based games (such as chess and Risk)
+    Outer Gates is a simultaneous turn based game, both players take their turn together.
+    In the commit phase All cards must ne placed
+    face down.
+both players mark down their next play by placing 1 warrior card, with a placement indicator card (numbered 1-9),
+and one spell card along side placement indicator card.
+Once both players have committed to their next play, the cards are reveled together.</h3>
+<div class="commit-example">
+    <h2>Example</h2>
+    <h3>Player 1 committed play</h3>
+    <div class="hand">
+<div class="over-lap">
+    <div class="card green on-top"><h1>1</h1>
+        </div>
+    <div class="card blue on-bottom"><p>8</p>
+        <img src="src/images/spartan.png" alt="spartan">
+        </div>
+</div>
+<div class="over-lap">
+    <div class="card green on-top"><h1>7</h1>
+        </div>
+    <div class="card baj on-bottom"><p>3</p>
+        <br>
+        <h1>Plague</h1>
+        <br>
+        <h7>Send all warriors to the graveyard</h7>
+        </div>
+</div>
+</div>
+<h3>Player 2 committed play</h3>
+<div class="hand">
+<div class="over-lap">
+    <div class="card green on-top"><h1>4</h1>
+        </div>
+    <div class="card gold on-bottom"><p>3</p>
+        <img src="src/images/spartan.png" alt="spartan">
+        </div>
+</div>
+<div class="over-lap">
+    <div class="card green on-top"><h1>2</h1>
+        </div>
+    <div class="card baj on-bottom"><p>1</p>
+        <br>
+        <h1>Push</h1>
+        <br>
+        <h7>Push warrior/s</h7>
+    </div>
+</div>
+</div>
+<h3>Will result in the following round</h3>
+<div class="grid">
+        
+    <div class="card blue blue8"><p>8</p>
+        <img src="src/images/spartan.png" alt="spartan">
+        </div>
+
+        <div class="card gold gold3"><p>3</p>
+            <img src="src/images/spartan.png" alt="spartan">
+            </div>
+
+        <div class="card baj plague"><p>3</p>
+                <br>
+                <h1>Plague</h1>
+                <br>
+                <h7>Send all warriors to the graveyard</h7>
+                </div>
+
+        <div class="card baj"><p>2</p>
+            <br>
+            <h1>Push</h1>
+            <br>
+            <h7>Push warrior/s</h7>
+                </div>
+</div>
+<div class="phase-description">
+<h3><u>2) Warrior Deployment-</u>warriors enter the board.</h3>
+<h3><u>3) Spells-</u>only after the warriors enter the board spells take effect. for example "Plague" will remove warriors placed that turn as well.</h3>
+<h3><u>4) Battle-</u>warriors occupying the same tile will engage in combat (unless it's a "calm" tile).
+The warrior with higher power automatically wins, the weaker warrior is sent to the graveyard.
+If both warriors are of equal power the are both sent to the graveyard. If the players run out of warriors in they're hand, at this point all warriors in the graveyard
+yard are returned to they're player's hand.</h3>
+<br>
+<h3>In case that at least one player reach they're wining condition at the end of the battle phase they earn a victory point and the round is set and all warriors on board are sent to the graveyard.</h3>
+</h3></div>
+</section>
+
+<footer id="Conatact-me">
+    <h2>Contact Me</h2>
+    <p>a.hoffman.lon@gmail.com</p>
+    </footer>
+  
+    
+
+<script src="src/app.js"></script>   
+</body>
+</html>
